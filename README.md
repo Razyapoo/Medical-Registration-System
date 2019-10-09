@@ -1,11 +1,12 @@
-# Elektronická zdravotní knížka
-
+Elektronická zdravotní knížka
+===
 **Elektronická zdravotní knížka je vysoce zabezpečený souhrn zdravotních informací o pacientovi, který je přístupný v elektronické podobě.**
 
-0.1.0
+verze 0.1.0
 
+# 
 ***Aplikace slouží jako elektronická knížka, která obsahuje informací o pacientovi.***
-===
+
 Nejdříve je nutné přidat oddělení, nemocí a léky.  Pak je možnost přidávat pacienty pomocí procedury “ProcPatient”. Aby přidat lékaře do bázy, je nutné nejdříve ho přidat do bázy pacientů, a pak už přidat do bázy lékařů pomocí procedury ***“INS_DOCTOR”***. Tedy báza pacientů je globální (lékař může být pacientem).  Pomocí procedury ***„InsMedicalCard”*** je možnost vytvořit zdravotní knížku pacienta.
 
 Update a Delete jsou standartní. 
@@ -24,8 +25,7 @@ Tabulka ***„History_Diseases“*** obsahuje HD_ID, HD_MC(medical card), nemoc�
 
 Tabulka ***„MedicalCard“*** obsahuje MC_ID, Pat_ID (ID pacienta).
 
-===
-
+# 
 View sloučí několik atributů. Využívá se pro popis návštěvy pacienta. Obsahuje MC_ID, jméno a příjmení pacientu, důvod (nemoc), oddělení (kterou navštívil pacient), jméno a příjmení doktora, jeho specializace, datum návštěvy, cenu procedury a měnu.
 
 Procedura ***“ProcPatient”*** přijímá jako argumenty Jméno (povinné), Příjmení (povinné), datum narození (povinné), adresu (povinné), email (dle potřeby), telefonní číslo (dle potřeby), balance (nemůže být záporný).
